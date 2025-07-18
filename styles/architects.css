@@ -18,17 +18,22 @@
     color: #424242;
 
 }
+
 /* dark-3 */
 .text-light-grey {
-    color:#727272;
+    color: #727272;
 }
 
 .bg-light {
     background-color: rgba(255, 144, 14, 0.1);
 }
 
+.text-primary {
+    color: #FF900E;
+}
+
 .btn-primary {
-    background-color:#FF900E;
+    background-color: #FF900E;
     color: white;
     padding: 20px 25px;
     font-weight: 600;
@@ -37,8 +42,12 @@
     border: none;
 }
 
-/* header styles */
 
+
+/* header styles */
+/* .border{
+    border: 2px solid tomato;
+} */
 /* navber related styles */
 .brand {
     font-weight: 700;
@@ -48,6 +57,7 @@
 .navbar {
     justify-content: space-between;
     align-items: center;
+
 }
 
 .nav-item {
@@ -64,7 +74,10 @@
     max-width: 1440px;
     margin: 0px auto;
 
+
 }
+
+
 
 /* banner related styles */
 
@@ -80,42 +93,59 @@
     font-size: 4rem;
 }
 
-.banner-image{
+.banner-image {
     width: 100%;
-   
+    margin-bottom: 20px;
+
 }
 
-main{
+main {
     max-width: 1440px;
     margin: 0 auto;
+
 }
 
-main > section{
+main>section {
     margin-top: 130px;
 }
 
 /* teams and feature related styles */
 
-.teams{
+.teams {
     align-items: center;
+
 }
 
-.team-img-container{
+.team-img-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding: 0 10px;
+
+
+
 }
 
-.our-features{
+.our-features {
     margin-left: 130px;
     max-width: 530px;
+
 }
 
-.feature-title{
+.feature-title {
     font-size: 2.8rem;
     font-weight: 700;
 }
 
-#quick-list{
+.feature-description {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    /* width: 20px; */
+}
+
+
+#quick-list {
     font-weight: 500;
 }
 
@@ -124,8 +154,43 @@ main > section{
 
 @media screen and (max-width: 576px) {
 
-    .navbar, .nav-links{
+    .navbar,
+    .nav-links,
+    .teams {
         flex-direction: column;
     }
-    
+
+    .team-img-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .our-features {
+        margin-left: 20px;
+
+    }
+     /*  */
+    .navbar,
+    .banner,
+    main {
+        padding: 0 20px;
+    }
+
+    /* .banner-image {
+        overflow-x: hidden;
+    } */
+
+    /* .nav-links {
+        padding: 0;
+        margin: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    } */
+
+
+
 }
